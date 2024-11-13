@@ -30,7 +30,8 @@ http://localhost:8080/swagger-ui/index.html
 - portfolio_stock (중간 테이블): 포트폴리오와 증권 간의 다대다 관계를 저장하기 위해 portfolio와 stock을 연결하는 테이블입니다.
 - login_history: 각 사용자의 로그인/로그아웃 이력을 저장하는 테이블입니다.
 
-
+## ERD
+![img.png](img.png)
 
 --- 
 

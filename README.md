@@ -21,6 +21,17 @@ http://localhost:8080/swagger-ui/index.html
 
 # 3. ERD
 
+## table
+- users: 사용자 정보 테이블로, 각 사용자는 하나의 account와 여러 login_history를 가질 수 있습니다.
+- account: 사용자 계좌 테이블로, 각 계좌는 여러 transaction을 가질 수 있습니다.
+- transaction: 입출금 내역을 저장하는 테이블로, 각 거래는 특정 account와 연결되며, 거래 후 잔고 정보를 포함합니다.
+- portfolio: 사용자의 자문 요청에 따른 포트폴리오 정보 테이블입니다.
+- stock: 증권 정보 테이블로, 증권의 코드, 이름, 가격을 관리합니다.
+- portfolio_stock (중간 테이블): 포트폴리오와 증권 간의 다대다 관계를 저장하기 위해 portfolio와 stock을 연결하는 테이블입니다.
+- login_history: 각 사용자의 로그인/로그아웃 이력을 저장하는 테이블입니다.
+
+
+
 --- 
 
 # 4. API Documentation
